@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codingape.buscab.api.data.DummyBarDaoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-11-09T15:15:32" hostname="rodrigo-Inspiron-5520" time="0.07">
+  <properties/>
+  <testcase name="testGetBar" classname="com.codingape.buscab.api.data.DummyBarDaoTest" time="0.07"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
