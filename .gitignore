@@ -2,10 +2,11 @@
 .classpath
 .project
 .settings/
-#.gradle/
-#build/
-#out/
-#gradle/
+.gradle/
+build/
+out/
+gradle/
+.idea/workspace.xml
 
 # Intellij
 .idea/
