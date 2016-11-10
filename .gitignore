@@ -2,10 +2,10 @@
 .classpath
 .project
 .settings/
-.gradle/
-build/
-out/
-gradle/
+#.gradle/
+#build/
+#out/
+#gradle/
 
 # Intellij
 .idea/
