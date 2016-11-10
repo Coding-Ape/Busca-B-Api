@@ -15,5 +15,6 @@ dependencies {
     testCompile group: 'org.assertj', name: 'assertj-core', version: '3.5.2'
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.14'
     compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.14'
+    compile 'org.elasticsearch.client:transport:5.0.0'
 
 }

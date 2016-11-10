@@ -2,37 +2,35 @@ package com.codingape.buscab.api.model;
 
 public class Bar {
 
-    private Integer id;
-    private String nombre;
-    private String direccion;
-    private Float rating;
-    private String descripcion;
+    protected String id;
 
-    public Bar (Integer id, String nombre, String direccion, Float rating, String descripcion){
-        this.id=id;
-        this.nombre=nombre;
-        this.direccion=direccion;
-        this.rating=rating;
-        this.descripcion=descripcion;
+    protected String name;
+
+    protected String description;
+
+    protected String address;
+
+    public Bar(String id, String name, String description, String address) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.address = address;
     }
 
-    public Integer getId(){
+    public String getId() {
         return id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public String getDireccion() {
-        return direccion;
+    public String getDescription() {
+        return description;
     }
 
-    public Float getRating() {
-        return rating;
+    public String getAddress() {
+        return address;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
 }
