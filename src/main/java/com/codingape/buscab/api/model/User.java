@@ -5,14 +5,32 @@ package com.codingape.buscab.api.model;
  */
 public class User {
 
+    private String id;
     private String mail;
-    private String nombre;
+    private String name;
     private String password;
 
 
-    public User (String mail, String nombre, String password){
+    public User (String id, String mail, String name, String password){
+        this.id = id;
         this.mail = mail;
-        this.nombre = nombre;
+        this.name = name;
         this.password = password;
+    }
+
+    public String getId(){
+        return id;
+    }
+
+    public String getMail(){
+        return mail;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public String getPassword(){
+        return password;
     }
 }

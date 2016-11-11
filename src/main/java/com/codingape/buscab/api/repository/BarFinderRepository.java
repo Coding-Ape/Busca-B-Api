@@ -3,6 +3,7 @@ package com.codingape.buscab.api.repository;
 
 import com.codingape.buscab.api.dao.BarFinderInMemoryDao;
 import com.codingape.buscab.api.dao.IBarFinderDao;
+import com.codingape.buscab.api.exception.BarNotFoundException;
 import com.codingape.buscab.api.exception.UserNotFoundException;
 import com.codingape.buscab.api.model.Bar;
 
@@ -14,7 +15,7 @@ public class BarFinderRepository {
 		barDao = new BarFinderInMemoryDao();
 	}
 	
-	public Bar getBar (String id) throws UserNotFoundException {
+	public Bar getBar (String id) throws BarNotFoundException {
 		return barDao.getBarById(id);
 	}
 	

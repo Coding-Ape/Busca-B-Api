@@ -1,11 +1,11 @@
 package com.codingape.buscab.api.dao;
 
-import com.codingape.buscab.api.exception.UserNotFoundException;
+import com.codingape.buscab.api.exception.BarNotFoundException;
 import com.codingape.buscab.api.model.ExtendedBarDetails;
 
 public interface IExtendedBarDetailsDao {
 
-    public ExtendedBarDetails getBarById(String id) throws UserNotFoundException;
+    public ExtendedBarDetails getBarById(String id) throws BarNotFoundException;
 
     public void addBar(ExtendedBarDetails bar);
 

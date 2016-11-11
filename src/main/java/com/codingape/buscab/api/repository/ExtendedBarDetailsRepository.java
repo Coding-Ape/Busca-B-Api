@@ -2,6 +2,7 @@ package com.codingape.buscab.api.repository;
 
 import com.codingape.buscab.api.dao.ExtendedBarDetailsInMemoryDao;
 import com.codingape.buscab.api.dao.IExtendedBarDetailsDao;
+import com.codingape.buscab.api.exception.BarNotFoundException;
 import com.codingape.buscab.api.exception.UserNotFoundException;
 import com.codingape.buscab.api.model.ExtendedBarDetails;
 
@@ -13,7 +14,7 @@ public class ExtendedBarDetailsRepository {
         extendedBarDetailsDao =  new ExtendedBarDetailsInMemoryDao();
     }
 
-    public ExtendedBarDetails getExtendedBarDetails (String id) throws UserNotFoundException {
+    public ExtendedBarDetails getExtendedBarDetails (String id) throws BarNotFoundException {
         return extendedBarDetailsDao.getBarById(id);
     }
 

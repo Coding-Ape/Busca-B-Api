@@ -5,17 +5,22 @@ package com.codingape.buscab.api.model;
  */
 public class Review {
 
+    private String id;
+
     private User author;
 
     private Float rating;
 
     private String description;
 
-    public Review (User author, Float rating, String description){
+    public Review (String id, User author, Float rating, String description){
+        this.id = id;
         this.author = author;
         this.rating = rating;
         this.description = description;
     }
+
+    public String getId() { return id;}
 
     public User getAuthor(){
         return author;
